@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Segoe UI";
 }
 nav {
   font-family: "Segoe UI";
@@ -183,6 +184,7 @@ a {
   font-weight: 500;
   color: #00b6d1;
   font-size: 24px;
+  text-align: center;
   text-wrap: nowrap;
   padding-bottom: 10px;
 }
@@ -224,4 +226,123 @@ a {
   font-weight: bold;
 }
 
+.newsletter-section .newsletter-sub-2 {
+  margin: 0 240px;
+}
+.newsletter-sub-2 h3 {
+  font-size: 24px;
+  padding: 0 0 10px;
+}
+.newsletter-sub-2 p {
+  font-size: 16px;
+  padding: 0 0 16px 0;
+}
+.newsletter-sub-2 p span {
+  color: #00b6d1;
+}
 /* nweslatter section end */
+
+/* media quary */
+@media screen and (max-width: 768px) {
+  /* Tablet specific styles */
+  nav {
+    flex-direction: column;
+    margin: 10px 20px;
+  }
+  nav img {
+    width: 150px;
+    height: auto;
+  }
+  nav ul {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .welcome-section {
+    padding: 20px 30px;
+  }
+  .welcome-section h1 {
+    font-size: 36px;
+  }
+  .welcome-section h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .downlod-section .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .newsletter-section .newslaetter-sub-1 {
+    flex-direction: column;
+    margin: 10px 20px;
+    padding: 20px 0;
+  }
+  .newsletter-section .newsletter-email {
+    padding: 20px;
+    margin: 10px 20px;
+  }
+  .newsletter-section .newsletter-sub-2 {
+    margin: 10px 20px;
+  }
+  .downlod-section {
+    margin: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Phone specific styles */
+  nav {
+    margin: 10px 10px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav img {
+    width: 120px;
+  }
+  .welcome-section {
+    padding: 10px 15px;
+  }
+  .welcome-section h1 {
+    font-size: 28px;
+  }
+  .welcome-section h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .welcome-section button {
+    min-width: 180px;
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+  .downlod-section {
+    margin: 10px 10px;
+  }
+  .downlod-section .grid .card {
+    padding: 15px;
+  }
+  .newsletter-section {
+    padding: 20px 10px;
+  }
+  .newsletter-section .newslaetter-sub-1 {
+    margin: 10px 10px;
+  }
+  .newsletter-section .newsletter-email {
+    padding: 15px;
+  }
+  .newsletter-section .newsletter-sub-2 {
+    margin: 10px 10px;
+  }
+  .newslaetter-sub-1 .newsletter-email h3 {
+    font-weight: 500;
+    color: #00b6d1;
+    font-size: 16px;
+    text-align: center;
+    text-wrap: nowrap;
+    padding-bottom: 10px;
+  }
+  .downlod-section .grid {
+    grid-template-columns: 1fr;
+  }
+}
